@@ -147,6 +147,22 @@ h1, h2, p { margin-top: 0; }
 .provider-links { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 20px; list-style: none; padding: 0; margin: 0; }
 .provider-links a { color: #ddd; font-size: 10px; }
 
+/* Applications page */
+.apps-hero { background: radial-gradient(ellipse at 62% 60%, rgba(255,255,255,.045), transparent 42%); }
+.apps-hero h1 { max-width: 720px; }
+.apps-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; padding: 1px 11% 76px; border-bottom: 1px solid var(--line); background: rgba(255,255,255,.035); }
+.app-card { display: flex; min-height: 340px; flex-direction: column; padding: 29px 30px 26px; border: 1px solid var(--line); background: linear-gradient(145deg, #1d1e20, #171819 75%); }
+.app-card-accent { background: linear-gradient(145deg, #222324, #191a1b 75%); }
+.app-card-topline { display: flex; justify-content: space-between; gap: 12px; color: #777875; font: 8px var(--mono); letter-spacing: .12em; }
+.app-card-topline span:last-child { color: var(--accent); text-align: right; }
+.app-card-body { margin: auto 0 28px; padding-top: 52px; }
+.app-card-index { margin: 0 0 11px; color: #858683; font: 8px var(--mono); letter-spacing: .16em; }
+.app-card h2 { margin: 0 0 14px; color: #efefeb; font-size: clamp(34px, 4vw, 54px); line-height: .98; letter-spacing: -.075em; }
+.app-card-body > p:last-child { max-width: 380px; margin: 0; color: #9a9b98; font-size: 12px; line-height: 1.8; }
+.app-card-actions { display: flex; flex-wrap: wrap; gap: 13px 24px; padding-top: 18px; border-top: 1px solid var(--line); }
+.app-card-actions a { color: var(--accent); text-decoration: none; font: 8px/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.app-card-actions a:hover { color: #fff; }
+
 @media (max-width: 800px) {
   .site-shell { width: min(100% - 30px, 680px); padding-top: 26px; }
   .folio-heading, .folio-footer { margin-left: 8px; margin-right: 8px; font-size: 7px; }
@@ -174,6 +190,8 @@ h1, h2, p { margin-top: 0; }
   .policy-layout { grid-template-columns: 1fr; gap: 35px; padding: 40px 9% 64px; }
   .policy-index { position: static; display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 15px; }
   .policy-index .eyebrow { grid-column: 1/-1; }
+  .apps-grid { padding: 1px 9% 58px; }
+  .app-card { min-height: 300px; padding: 26px 24px 23px; }
 }
 @media (max-width: 540px) {
   .site-shell { width: calc(100% - 20px); padding-top: 16px; }
@@ -223,6 +241,11 @@ h1, h2, p { margin-top: 0; }
   .policy-block h2 { font-size: 17px; }
   .policy-block p { font-size: 10px; line-height: 1.8; }
   .provider-links { grid-template-columns: 1fr; }
+  .apps-grid { grid-template-columns: 1fr; padding: 1px 8% 40px; }
+  .app-card { min-height: 270px; padding: 24px 21px 21px; }
+  .app-card-body { padding-top: 40px; }
+  .app-card h2 { font-size: 40px; }
+  .app-card-actions { flex-direction: column; gap: 11px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

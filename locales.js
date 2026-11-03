@@ -6,7 +6,13 @@ window.extraTranslations = {
     menuOpen: "Open navigation", menuClose: "Close navigation", languageLabel: "Language",
     supportSubject: "App support", privacySubject: "Privacy question", appFieldName: "App", nameFieldName: "Name",
     pleaseDescribe: "Please add a short description before opening your email app.",
-    supportDocumentTitle: "Pavlo Kior · App Support", privacyDocumentTitle: "Privacy Policy · Pavlo Kior"
+    navApps: "Applications", appsKicker: "APPLICATIONS", appsTitle: "Apps &amp;<br />projects<span class=\"period\">.</span>",
+    appsIntro: "A selection of apps and projects created by Pavlo Kior.",
+    fatAlienCategory: "NUTRITION & WELLNESS", fatAlienSummary: "A food and nutrition journal for tracking meals, personal goals and progress.",
+    appsPrivacyLink: "Privacy details ↗", appsSupportLink: "Get support ↗",
+    seatCoreCategory: "RESTAURANT BOOKINGS", seatCoreSummary: "A restaurant reservation project focused on bookings and table management.",
+    seatCoreContact: "Contact about SeatCore ↗",
+    supportDocumentTitle: "Pavlo Kior · App Support", privacyDocumentTitle: "Privacy Policy · Pavlo Kior", appsDocumentTitle: "Applications · Pavlo Kior"
   },
   ru: {
     developerLabel: "НЕЗАВИСИМЫЙ РАЗРАБОТЧИК ПРИЛОЖЕНИЙ", asideNote: "Напрямую<br />разработчику",
@@ -15,10 +21,22 @@ window.extraTranslations = {
     menuOpen: "Открыть меню", menuClose: "Закрыть меню", languageLabel: "Язык",
     supportSubject: "Поддержка приложений", privacySubject: "Вопрос о конфиденциальности",
     appFieldName: "Приложение", nameFieldName: "Имя", pleaseDescribe: "Кратко опишите проблему.",
-    supportDocumentTitle: "Pavlo Kior · Поддержка приложений", privacyDocumentTitle: "Pavlo Kior · Конфиденциальность"
+    navApps: "Приложения", appsKicker: "ПРИЛОЖЕНИЯ", appsTitle: "Приложения<br />и проекты<span class=\"period\">.</span>",
+    appsIntro: "Приложения и проекты Павла Киора.",
+    fatAlienCategory: "ПИТАНИЕ И ЗДОРОВЬЕ", fatAlienSummary: "Дневник питания для отслеживания приёмов пищи, личных целей и прогресса.",
+    appsPrivacyLink: "Подробнее о конфиденциальности ↗", appsSupportLink: "Поддержка ↗",
+    seatCoreCategory: "БРОНИРОВАНИЕ СТОЛИКОВ", seatCoreSummary: "Проект для бронирования столиков и управления посадкой в ресторане.",
+    seatCoreContact: "Связаться о SeatCore ↗",
+    supportDocumentTitle: "Pavlo Kior · Поддержка приложений", privacyDocumentTitle: "Pavlo Kior · Конфиденциальность", appsDocumentTitle: "Pavlo Kior · Приложения"
   },
   uk: {
-    navSupport: "Підтримка", navPrivacy: "Конфіденційність", navContact: "Написати",
+    navSupport: "Підтримка", navPrivacy: "Конфіденційність", navContact: "Написати", navApps: "Застосунки",
+    appsKicker: "ЗАСТОСУНКИ", appsTitle: "Застосунки<br />й проєкти<span class=\"period\">.</span>",
+    appsIntro: "Добірка застосунків і проєктів Павла Кіора.",
+    fatAlienCategory: "ХАРЧУВАННЯ І ЗДОРОВ’Я", fatAlienSummary: "Щоденник харчування для запису страв, особистих цілей і прогресу.",
+    appsPrivacyLink: "Про конфіденційність ↗", appsSupportLink: "Підтримка ↗",
+    seatCoreCategory: "БРОНЮВАННЯ СТОЛИКІВ", seatCoreSummary: "Проєкт для бронювання столиків і керування посадкою в ресторані.",
+    seatCoreContact: "Написати про SeatCore ↗",
     overline: "ПІДТРИМКА ВСІХ ЗАСТОСУНКІВ", title: "Чим я можу<br />допомогти<span class=\"period\">?</span>",
     heroCopy: "Це сторінка підтримки застосунків, створених Павлом Кіором. Напишіть, яким застосунком користуєтеся, та опишіть проблему. Я постараюся допомогти.",
     roundLink: "НАПИСАТИ<br />МЕНІ", includeTitle: "Що вказати в листі",
@@ -69,10 +87,16 @@ window.extraTranslations = {
     folioLabel: "ПІДТРИМКА <i>·</i> ЗАСТОСУНКІВ", menuOpen: "Відкрити меню", menuClose: "Закрити меню",
     languageLabel: "Мова", supportSubject: "Підтримка застосунків", privacySubject: "Питання про конфіденційність",
     appFieldName: "Застосунок", nameFieldName: "Ім’я", pleaseDescribe: "Коротко опишіть проблему.",
-    supportDocumentTitle: "Pavlo Kior · Підтримка застосунків", privacyDocumentTitle: "Pavlo Kior · Конфіденційність"
+    supportDocumentTitle: "Pavlo Kior · Підтримка застосунків", privacyDocumentTitle: "Pavlo Kior · Конфіденційність", appsDocumentTitle: "Pavlo Kior · Застосунки"
   },
   lt: {
-    navSupport: "Pagalba", navPrivacy: "Privatumas", navContact: "Susisiekti",
+    navSupport: "Pagalba", navPrivacy: "Privatumas", navContact: "Susisiekti", navApps: "Programėlės",
+    appsKicker: "PROGRAMĖLĖS", appsTitle: "Programėlės<br />ir projektai<span class=\"period\">.</span>",
+    appsIntro: "Pavlo Kior sukurtų programėlių ir projektų rinkinys.",
+    fatAlienCategory: "MITYBA IR SVEIKATA", fatAlienSummary: "Maisto dienoraštis, skirtas žymėti valgius, asmeninius tikslus ir pažangą.",
+    appsPrivacyLink: "Privatumo informacija ↗", appsSupportLink: "Pagalba ↗",
+    seatCoreCategory: "RESTORANŲ REZERVACIJOS", seatCoreSummary: "Restoranų rezervacijų ir staliukų valdymo projektas.",
+    seatCoreContact: "Klausti apie SeatCore ↗",
     overline: "PAGALBA DĖL VISŲ PROGRAMĖLIŲ", title: "Kaip galiu<br />padėti<span class=\"period\">?</span>",
     heroCopy: "Tai Pavlo Kior sukurtų programėlių pagalbos puslapis. Parašykite, kurią programėlę naudojate, ir aprašykite problemą. Pasistengsiu padėti.",
     roundLink: "PARAŠYTI<br />MAN", includeTitle: "Ką nurodyti laiške",
@@ -122,10 +146,16 @@ window.extraTranslations = {
     folioLabel: "PROGRAMĖLIŲ <i>·</i> PAGALBA", menuOpen: "Atidaryti meniu", menuClose: "Uždaryti meniu",
     languageLabel: "Kalba", supportSubject: "Programėlių pagalba", privacySubject: "Privatumo klausimas",
     appFieldName: "Programėlė", nameFieldName: "Vardas", pleaseDescribe: "Trumpai aprašykite problemą.",
-    supportDocumentTitle: "Pavlo Kior · Programėlių pagalba", privacyDocumentTitle: "Pavlo Kior · Privatumas"
+    supportDocumentTitle: "Pavlo Kior · Programėlių pagalba", privacyDocumentTitle: "Pavlo Kior · Privatumas", appsDocumentTitle: "Pavlo Kior · Programėlės"
   },
   pl: {
-    navSupport: "Pomoc", navPrivacy: "Prywatność", navContact: "Kontakt",
+    navSupport: "Pomoc", navPrivacy: "Prywatność", navContact: "Kontakt", navApps: "Aplikacje",
+    appsKicker: "APLIKACJE", appsTitle: "Aplikacje<br />i projekty<span class=\"period\">.</span>",
+    appsIntro: "Wybrane aplikacje i projekty Pavlo Kiora.",
+    fatAlienCategory: "ODŻYWIANIE I ZDROWIE", fatAlienSummary: "Dziennik żywieniowy do zapisywania posiłków, celów i postępów.",
+    appsPrivacyLink: "Informacje o prywatności ↗", appsSupportLink: "Uzyskaj pomoc ↗",
+    seatCoreCategory: "REZERWACJE RESTAURACYJNE", seatCoreSummary: "Projekt do rezerwacji stolików i zarządzania miejscami w restauracji.",
+    seatCoreContact: "Kontakt w sprawie SeatCore ↗",
     overline: "POMOC DOTYCZĄCA WSZYSTKICH APLIKACJI", title: "Jak mogę<br />pomóc<span class=\"period\">?</span>",
     heroCopy: "To strona pomocy dotycząca aplikacji stworzonych przez Pavlo Kiora. Napisz, z której aplikacji korzystasz, i opisz problem. Postaram się pomóc.",
     roundLink: "NAPISZ<br />DO MNIE", includeTitle: "Co podać w wiadomości",
@@ -175,10 +205,16 @@ window.extraTranslations = {
     folioLabel: "POMOC <i>·</i> APLIKACJI", menuOpen: "Otwórz menu", menuClose: "Zamknij menu",
     languageLabel: "Język", supportSubject: "Pomoc dotycząca aplikacji", privacySubject: "Pytanie o prywatność",
     appFieldName: "Aplikacja", nameFieldName: "Imię", pleaseDescribe: "Krótko opisz problem.",
-    supportDocumentTitle: "Pavlo Kior · Pomoc dotycząca aplikacji", privacyDocumentTitle: "Pavlo Kior · Prywatność"
+    supportDocumentTitle: "Pavlo Kior · Pomoc dotycząca aplikacji", privacyDocumentTitle: "Pavlo Kior · Prywatność", appsDocumentTitle: "Pavlo Kior · Aplikacje"
   },
   de: {
-    navSupport: "Support", navPrivacy: "Datenschutz", navContact: "Kontakt",
+    navSupport: "Support", navPrivacy: "Datenschutz", navContact: "Kontakt", navApps: "Apps",
+    appsKicker: "APPS", appsTitle: "Apps &amp;<br />Projekte<span class=\"period\">.</span>",
+    appsIntro: "Eine Auswahl von Apps und Projekten von Pavlo Kior.",
+    fatAlienCategory: "ERNÄHRUNG & GESUNDHEIT", fatAlienSummary: "Ein Ernährungstagebuch für Mahlzeiten, persönliche Ziele und Fortschritte.",
+    appsPrivacyLink: "Datenschutzdetails ↗", appsSupportLink: "Support erhalten ↗",
+    seatCoreCategory: "RESTAURANTRESERVIERUNGEN", seatCoreSummary: "Ein Restaurantprojekt für Reservierungen und Tischverwaltung.",
+    seatCoreContact: "Kontakt zu SeatCore ↗",
     overline: "SUPPORT FÜR ALLE APPS", title: "Wie kann<br />ich helfen<span class=\"period\">?</span>",
     heroCopy: "Dies ist die Supportseite für Apps von Pavlo Kior. Teile mit, welche App du verwendest, und beschreibe das Problem. Ich bemühe mich, dir zu helfen.",
     roundLink: "NACHRICHT<br />SENDEN", includeTitle: "Was du angeben solltest",
@@ -228,10 +264,16 @@ window.extraTranslations = {
     folioLabel: "APP-SUPPORT <i>·</i> UNABHÄNGIG", menuOpen: "Navigation öffnen", menuClose: "Navigation schließen",
     languageLabel: "Sprache", supportSubject: "App-Support", privacySubject: "Datenschutzfrage",
     appFieldName: "App", nameFieldName: "Name", pleaseDescribe: "Bitte beschreibe kurz das Problem.",
-    supportDocumentTitle: "Pavlo Kior · App-Support", privacyDocumentTitle: "Pavlo Kior · Datenschutz"
+    supportDocumentTitle: "Pavlo Kior · App-Support", privacyDocumentTitle: "Pavlo Kior · Datenschutz", appsDocumentTitle: "Pavlo Kior · Apps"
   },
   es: {
-    navSupport: "Soporte", navPrivacy: "Privacidad", navContact: "Contacto",
+    navSupport: "Soporte", navPrivacy: "Privacidad", navContact: "Contacto", navApps: "Apps",
+    appsKicker: "APPS", appsTitle: "Apps y<br />proyectos<span class=\"period\">.</span>",
+    appsIntro: "Una selección de apps y proyectos creados por Pavlo Kior.",
+    fatAlienCategory: "NUTRICIÓN Y BIENESTAR", fatAlienSummary: "Un diario de alimentación para registrar comidas, objetivos personales y progreso.",
+    appsPrivacyLink: "Detalles de privacidad ↗", appsSupportLink: "Obtener soporte ↗",
+    seatCoreCategory: "RESERVAS DE RESTAURANTE", seatCoreSummary: "Un proyecto de reservas de restaurante centrado en gestionar reservas y mesas.",
+    seatCoreContact: "Contactar sobre SeatCore ↗",
     overline: "SOPORTE PARA TODAS LAS APPS", title: "¿Cómo puedo<br />ayudarte<span class=\"period\">?</span>",
     heroCopy: "Esta es la página de soporte de las apps creadas por Pavlo Kior. Indica qué app utilizas y describe el problema. Haré lo posible por ayudarte.",
     roundLink: "ESCRIBIR<br />A PAVLO", includeTitle: "Qué incluir",
@@ -281,6 +323,6 @@ window.extraTranslations = {
     folioLabel: "SOPORTE <i>·</i> DE APPS", menuOpen: "Abrir navegación", menuClose: "Cerrar navegación",
     languageLabel: "Idioma", supportSubject: "Soporte de apps", privacySubject: "Pregunta de privacidad",
     appFieldName: "App", nameFieldName: "Nombre", pleaseDescribe: "Describe brevemente el problema.",
-    supportDocumentTitle: "Pavlo Kior · Soporte de apps", privacyDocumentTitle: "Pavlo Kior · Privacidad"
+    supportDocumentTitle: "Pavlo Kior · Soporte de apps", privacyDocumentTitle: "Pavlo Kior · Privacidad", appsDocumentTitle: "Pavlo Kior · Apps"
   }
 };

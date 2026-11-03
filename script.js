@@ -1,13 +1,13 @@
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
 const languageSelect = document.querySelector('#language');
-const pageName = location.pathname.endsWith('privacy.html') ? 'privacy' : 'support';
+const pageName = location.pathname.endsWith('privacy.html') ? 'privacy' : location.pathname.endsWith('apps.html') ? 'apps' : 'support';
 let currentLanguage = 'en';
 
 const baseTranslations = {
   en: {},
   ru: {
-    navSupport: "Поддержка", navPrivacy: "Конфиденциальность", navContact: "Написать",
+    navSupport: "Поддержка", navPrivacy: "Конфиденциальность", navContact: "Написать", navApps: "Приложения",
     overline: "ПОДДЕРЖКА ВСЕХ ПРИЛОЖЕНИЙ",
     title: "Чем я могу<br />помочь<span class=\"period\">?</span>",
     heroCopy: "Это страница поддержки приложений, созданных Павлом Киором. Напишите, каким приложением пользуетесь, и опишите проблему. Я постараюсь помочь.",
@@ -81,10 +81,14 @@ function applyLanguage(language) {
     const value = dictionary[element.dataset.i18nPlaceholder];
     if (value) element.placeholder = value;
   });
-  document.querySelectorAll('a[href^="index.html"], a[href^="privacy.html"]').forEach((link) => {
-    link.href = link.getAttribute('href').split('?')[0] + '?lang=' + currentLanguage;
+  document.querySelectorAll('a[href^="index.html"], a[href^="privacy.html"], a[href^="apps.html"]').forEach((link) => {
+    const [pathAndQuery, hash] = link.getAttribute('href').split('#');
+    const [path, query = ''] = pathAndQuery.split('?');
+    const linkParams = new URLSearchParams(query);
+    linkParams.set('lang', currentLanguage);
+    link.href = path + '?' + linkParams.toString() + (hash ? '#' + hash : '');
   });
-  document.title = pageName === 'privacy' ? dictionary.privacyDocumentTitle : dictionary.supportDocumentTitle;
+  document.title = pageName === 'privacy' ? dictionary.privacyDocumentTitle : pageName === 'apps' ? dictionary.appsDocumentTitle : dictionary.supportDocumentTitle;
   if (languageSelect) languageSelect.setAttribute('aria-label', dictionary.languageLabel || 'Language');
   if (menuButton) menuButton.setAttribute('aria-label', dictionary.menuOpen || 'Open navigation');
   const mailLinks = document.querySelectorAll('a[href^="mailto:kiorpavlo@gmail.com"]');
@@ -96,6 +100,9 @@ function applyLanguage(language) {
 }
 
 applyLanguage(new URLSearchParams(location.search).get('lang'));
+const appSelect = document.querySelector('#app');
+const requestedApp = new URLSearchParams(location.search).get('app');
+if (appSelect && requestedApp && Array.from(appSelect.options).some((option) => option.value === requestedApp)) appSelect.value = requestedApp;
 languageSelect?.addEventListener('change', (event) => applyLanguage(event.target.value));
 
 if (menuButton && nav) {
