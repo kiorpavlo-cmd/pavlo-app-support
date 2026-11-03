@@ -80,8 +80,12 @@
             <p data-i18n="contactCopy">Have a question, an idea, or something not working as expected? Send me a note and I’ll get back to you.</p>
             <div class="contact-stamp"><span>INDEPENDENT<br />BY DESIGN</span><b>PK</b></div>
           </div>
-          <form class="contact-form" id="support-form">
+          <form class="contact-form" id="support-form" action="https://formsubmit.co/kiorpavlo@gmail.com" method="POST">
             <div class="form-heading"><span class="eyebrow" data-i18n="formTitle">SUPPORT REQUEST</span><span class="form-number">03 / 03</span></div>
+            <input type="hidden" name="_replyto" id="form-reply-to" />
+            <input type="hidden" name="_subject" id="form-subject" value="App support" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" id="form-next" value="https://kiorpavlo-cmd.github.io/pavlo-app-support/index.html?lang=en&amp;sent=1#contact" />
             <label for="name"><span data-i18n="nameLabel">Your name</span> <span data-i18n="optional">OPTIONAL</span></label>
             <input id="name" name="name" autocomplete="name" placeholder="Name" data-i18n-placeholder="namePlaceholder" />
             <label for="email" data-i18n="emailLabel">Your email</label>
@@ -115,6 +119,6 @@
       <div class="folio-footer"><span data-i18n="builtWithCare">BUILT WITH CARE</span><span data-i18n-html="folioLabel">APP SUPPORT <i>·</i> INDEPENDENT DEVELOPER</span></div>
     </div>
     <script src="locales.js?v=20261103-contact-form"></script>
-    <script src="script.js?v=20261103-contact-form"></script>
+    <script src="script.js?v=20261103-native-form-1"></script>
   </body>
 </html>

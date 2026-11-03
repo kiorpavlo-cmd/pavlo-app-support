@@ -122,58 +122,27 @@ const supportForm = document.querySelector('#support-form');
 const formMessage = document.querySelector('#form-message');
 
 if (supportForm) {
-  supportForm.addEventListener('submit', async (event) => {
-    event.preventDefault();
+  const sentParams = new URLSearchParams(location.search);
+  if (sentParams.get('sent') === '1' && formMessage) {
+    const dictionary = translations[currentLanguage] || translations.en;
+    formMessage.textContent = dictionary.formSent || 'Your message was sent.';
+    sentParams.delete('sent');
+    history.replaceState(null, '', location.pathname + (sentParams.toString() ? '?' + sentParams.toString() : '') + location.hash);
+  }
+
+  supportForm.addEventListener('submit', () => {
     const values = new FormData(supportForm);
-    const name = String(values.get('name') || '').trim();
     const email = String(values.get('email') || '').trim();
     const selectedApp = String(values.get('app') || 'Fat Alien');
     const dictionary = translations[currentLanguage] || translations.en;
     const app = selectedApp === 'Another app' ? (dictionary.anotherApp || selectedApp) : selectedApp;
-    const message = String(values.get('message') || '').trim();
-    if (formMessage) {
-      formMessage.textContent = dictionary.formSending || 'Sending…';
-      formMessage.className = 'form-message';
-    }
-    const submitButton = supportForm.querySelector('button[type="submit"]');
-    if (submitButton) submitButton.disabled = true;
-    supportForm.setAttribute('aria-busy', 'true');
-    try {
-      const payload = Object.fromEntries(values.entries());
-      payload.email = email;
-      payload._replyto = email;
-      payload._subject = (dictionary.supportSubject || 'App support') + ' — ' + app;
-      payload._template = 'table';
-      const response = await fetch('https://formsubmit.co/ajax/kiorpavlo@gmail.com', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      const result = await response.json();
-      const serviceMessage = String(result.message || '');
-      if (!response.ok || result.success === false || result.success === 'false') {
-        if (/confirm|activat/i.test(serviceMessage)) {
-          if (formMessage) formMessage.textContent = dictionary.formActivation || 'The form needs one-time activation. Please email kiorpavlo@gmail.com for now.';
-          return;
-        }
-        throw new Error(serviceMessage || 'Form submission failed');
-      }
-      if (/confirm|activat/i.test(serviceMessage)) {
-        if (formMessage) formMessage.textContent = dictionary.formActivation || 'The form needs one-time activation. Please email kiorpavlo@gmail.com for now.';
-      } else {
-        if (formMessage) formMessage.textContent = dictionary.formSent || 'Your message was sent.';
-        supportForm.querySelector('#name').value = '';
-        supportForm.querySelector('#email').value = '';
-        supportForm.querySelector('#message').value = '';
-      }
-    } catch (error) {
-      if (formMessage) {
-        formMessage.textContent = dictionary.formFailed || 'Your message could not be sent. Please try again or email kiorpavlo@gmail.com.';
-        formMessage.className = 'form-message is-error';
-      }
-    } finally {
-      if (submitButton) submitButton.disabled = false;
-      supportForm.removeAttribute('aria-busy');
-    }
+    supportForm.querySelector('#form-reply-to').value = email;
+    supportForm.querySelector('#form-subject').value = (dictionary.supportSubject || 'App support') + ' — ' + app;
+    const returnUrl = new URL(location.href);
+    returnUrl.searchParams.set('lang', currentLanguage);
+    returnUrl.searchParams.set('app', selectedApp);
+    returnUrl.searchParams.set('sent', '1');
+    returnUrl.hash = 'contact';
+    supportForm.querySelector('#form-next').value = returnUrl.toString();
   });
 }
