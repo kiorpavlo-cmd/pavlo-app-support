@@ -83,7 +83,9 @@
           <form class="contact-form" id="support-form">
             <div class="form-heading"><span class="eyebrow" data-i18n="formTitle">SUPPORT REQUEST</span><span class="form-number">03 / 03</span></div>
             <label for="name"><span data-i18n="nameLabel">Your name</span> <span data-i18n="optional">OPTIONAL</span></label>
-            <input id="name" name="name" autocomplete="name" placeholder="Name" />
+            <input id="name" name="name" autocomplete="name" placeholder="Name" data-i18n-placeholder="namePlaceholder" />
+            <label for="email" data-i18n="emailLabel">Your email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" data-i18n-placeholder="emailPlaceholder" />
             <label for="app" data-i18n="appLabel">App</label>
             <select id="app" name="app">
               <option value="Fat Alien">Fat Alien</option>
@@ -92,9 +94,10 @@
             </select>
             <label for="message" data-i18n="messageLabel">Message</label>
             <textarea id="message" name="message" rows="3" required placeholder="Tell me what happened…" data-i18n-placeholder="messagePlaceholder"></textarea>
-            <button class="send-button" type="submit"><span data-i18n="sendButton">OPEN EMAIL DRAFT</span> <span aria-hidden="true">↗</span></button>
-            <p class="form-note" data-i18n="formNote">Your email app will open with a draft. Nothing is sent until you send it.</p>
-            <p class="form-error" id="form-error" aria-live="polite"></p>
+            <div class="form-trap" aria-hidden="true"><label for="company">Company</label><input id="company" name="_honey" tabindex="-1" autocomplete="off" /></div>
+            <button class="send-button" type="submit"><span data-i18n="sendButton">SEND MESSAGE</span> <span aria-hidden="true">↗</span></button>
+            <p class="form-note" data-i18n="formNote">Your name, email, app and message are sent to my support inbox through FormSubmit. Please don't include passwords or payment details.</p>
+            <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
           </form>
         </section>
 
@@ -111,7 +114,7 @@
       </main>
       <div class="folio-footer"><span data-i18n="builtWithCare">BUILT WITH CARE</span><span data-i18n-html="folioLabel">APP SUPPORT <i>·</i> INDEPENDENT DEVELOPER</span></div>
     </div>
-    <script src="locales.js?v=4e9f7fe"></script>
-    <script src="script.js?v=4e9f7fe"></script>
+    <script src="locales.js?v=20261103-contact-form"></script>
+    <script src="script.js?v=20261103-contact-form"></script>
   </body>
 </html>

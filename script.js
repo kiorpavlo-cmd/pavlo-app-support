@@ -17,11 +17,14 @@ const baseTranslations = {
     noteLabel: "ЛИЧНО ОТ ПАВЛА", noteText: "Я читаю каждое сообщение сам и постараюсь вам помочь.",
     letsTalk: "НАПИШИТЕ МНЕ", contactTitle: "Написать<br />сообщение<span class=\"period\">.</span>",
     contactCopy: "Есть вопрос, идея или что-то не работает? Напишите мне — я отвечу, как только смогу.",
-    formTitle: "ОБРАЩЕНИЕ В ПОДДЕРЖКУ", nameLabel: "Ваше имя", optional: "НЕОБЯЗАТЕЛЬНО", appLabel: "Приложение", anotherApp: "Другое приложение",
-    messageLabel: "Сообщение", messagePlaceholder: "Опишите проблему…", sendButton: "ОТКРЫТЬ ЧЕРНОВИК ПИСЬМА",
-    formNote: "Откроется черновик в вашей почтовой программе. Письмо отправится только после вашего подтверждения.",
+    formTitle: "ОБРАЩЕНИЕ В ПОДДЕРЖКУ", nameLabel: "Ваше имя", optional: "НЕОБЯЗАТЕЛЬНО", emailLabel: "Ваш email", emailPlaceholder: "name@example.com", appLabel: "Приложение", anotherApp: "Другое приложение",
+    messageLabel: "Сообщение", messagePlaceholder: "Опишите проблему…", sendButton: "ОТПРАВИТЬ СООБЩЕНИЕ",
+    formNote: "Ваш email, выбранное приложение, сообщение и имя (если указано) будут отправлены через FormSubmit на мою почту поддержки. Не указывайте пароли и платёжные данные.",
+    formSending: "ОТПРАВКА…", formSent: "Сообщение отправлено. Я отвечу на указанный email.",
+    formFailed: "Не удалось отправить сообщение. Попробуйте ещё раз или напишите на kiorpavlo@gmail.com.",
+    formActivation: "Форма ожидает одноразового подтверждения владельцем сайта. Пока что напишите на kiorpavlo@gmail.com.",
     footerPrivacy: "Политика конфиденциальности", footerEmail: "Эл. почта",
-    privacyKicker: "КОНФИДЕНЦИАЛЬНОСТЬ", lastUpdated: "ОБНОВЛЕНО 25 ОКТЯБРЯ 2026 Г.",
+    privacyKicker: "КОНФИДЕНЦИАЛЬНОСТЬ", lastUpdated: "ОБНОВЛЕНО 3 НОЯБРЯ 2026 Г.",
     privacyTitle: "Политика<br />конфиден<wbr />циальности<span class=\"period\">.</span>",
     privacyIntro: "В этой политике описано, как Павло Киор обрабатывает информацию при посещении сайта поддержки и использовании разработанных мной приложений. Применяются только разделы, относящиеся к используемым вами функциям. Практики Fat Alien описаны отдельно ниже.",
     privacyQuestion: "ВОПРОСЫ О КОНФИДЕНЦИАЛЬНОСТИ?", emailPavlo: "НАПИСАТЬ ПАВЛУ", onThisPage: "НА ЭТОЙ СТРАНИЦЕ",
@@ -31,7 +34,7 @@ const baseTranslations = {
     sectionResponsible: "Ответственный за данные",
     pResponsible: "Павло Киор отвечает за персональные данные, которые получает напрямую, например когда вы обращаетесь в поддержку. Напишите на",
     sectionWebsite: "Информация на сайте поддержки",
-    pWebsite: "Сайт поддержки — статический сайт. При размещении на GitHub Pages GitHub может сохранять IP-адреса посетителей и технические сведения о запросах для работы сайта и безопасности. На сайте нет учетных записей, рекламы, аналитики и файлов cookie, добавленных мной. Форма поддержки только открывает черновик письма в вашей почтовой программе; данные формы не отправляются и не сохраняются на этом сайте. Если вы отправите письмо, я получу ваш адрес электронной почты, сообщение и приложенные файлы, которые решите отправить, и использую их для ответа и решения вопроса.",
+    pWebsite: "Сайт поддержки — статический сайт. При размещении на GitHub Pages GitHub может сохранять IP-адреса посетителей и технические сведения о запросах для работы сайта и безопасности. На сайте нет учетных записей, рекламы, аналитики и файлов cookie, добавленных мной. При отправке формы ваш email, выбранное приложение и сообщение, а также имя, если вы его указали, передаются через FormSubmit на мою почту поддержки, чтобы я мог ответить. FormSubmit обрабатывает данные по своим правилам конфиденциальности и хранит отправленные формы до 30 дней.",
     sectionFatAlien: "Fat Alien: данные и разрешения устройства",
     pFatAlien1: "В зависимости от выбранных функций Fat Alien хранит на устройстве такие сведения, как идентификатор учетной записи и способ входа (Apple или Google), адрес электронной почты, если его передал провайдер входа, данные профиля (например, имя или псевдоним, дата рождения, пол, рост и аватар), записи дневника питания, пищевую ценность, пользовательские продукты и рецепты, цели, показатели веса и процента жира, а также настройки приложения.",
     pFatAlien2: "Если включить синхронизацию iCloud, данные приложения синхронизируются с вашей личной закрытой базой CloudKit, связанной с Apple Account. iCloud обслуживает Apple; данные обрабатываются по условиям и политике Apple. С разрешения пользователя приложение может использовать HealthKit: считывать активную и базовую энергию, вес и процент жира, а также записывать вес и процент жира в приложение «Здоровье». Доступ к HealthKit необязателен. При включенной синхронизации данные приложения могут передаваться в вашу базу iCloud; отдельного сервера для медицинских данных у меня нет.",
@@ -39,9 +42,9 @@ const baseTranslations = {
     sectionUse: "Как используется информация",
     pUse: "Информация используется для работы выбранных вами функций, сохранения и восстановления данных приложения, синхронизации при включенном iCloud, поиска по штрихкоду и ответа на обращения в поддержку. В проверенном исходном коде Fat Alien нет сторонних SDK для рекламы или аналитики. Я не продаю персональные данные.",
     sectionProviders: "Поставщики услуг и другие получатели",
-    pProviders: "Информация передается только сервисам, необходимым для выбранной функции: Apple — для входа через Apple, iCloud/CloudKit и HealthKit; Google — если вы выберете вход через Google; Open Food Facts — для поиска по штрихкоду; GitHub Pages — для размещения сайта, если он будет опубликован там; вашему почтовому провайдеру — если вы напишете в поддержку. Эти сервисы обрабатывают данные по собственным правилам. Я не передаю данные приложения рекламодателям.",
+    pProviders: "Информация передается только сервисам, необходимым для выбранных функций: Apple — для входа через Apple, iCloud/CloudKit и HealthKit; Google — если вы выберете вход через Google; Open Food Facts — для поиска по штрихкоду; GitHub Pages — для размещения сайта; FormSubmit — для обработки обращений из формы и пересылки их на мою почту поддержки. Эти сервисы обрабатывают данные по собственным правилам конфиденциальности. Я не передаю данные приложений рекламодателям.",
     sectionRetention: "Хранение и сроки",
-    pRetention: "Данные приложения хранятся локально на устройстве. Если включена синхронизация iCloud, синхронизированные записи хранятся в вашей закрытой базе CloudKit. Переписка по электронной почте хранится столько, сколько необходимо для ответа и в течение разумного срока для учета или выполнения требований закона. Провайдер сайта обрабатывает технические журналы по своим правилам; при размещении на GitHub Pages это GitHub.",
+    pRetention: "Данные приложений хранятся локально на устройстве. При включённой синхронизации iCloud записи хранятся в вашей закрытой базе CloudKit. FormSubmit хранит обращения из формы до 30 дней; я храню переписку столько, сколько нужно для ответа и разумного учёта или соблюдения требований закона. GitHub Pages обрабатывает технические журналы сайта по своим правилам.",
     sectionChoices: "Ваш выбор, доступ и удаление данных",
     pChoices1: "Вы можете отказаться от необязательного доступа к камере, HealthKit или iCloud, а синхронизацию iCloud можно отключить в приложении. Вы можете написать мне с вопросом о данных из переписки с поддержкой или воспользоваться правами на конфиденциальность, предусмотренными в вашей стране.",
     pChoices2: "Текущая версия Fat Alien позволяет выйти из аккаунта и экспортировать данные, но в ней нет полного удаления аккаунта и связанных данных CloudKit прямо из приложения. Выход или удаление приложения не обязательно удаляет синхронизированные записи iCloud. Чтобы запросить помощь с удалением, напишите мне; для удаления данных из iCloud также могут потребоваться действия в настройках Apple Account или iCloud. Это ограничение указано, чтобы политика соответствовала текущим функциям приложения.",
@@ -51,7 +54,7 @@ const baseTranslations = {
     pChildren2: "По вопросам конфиденциальности или для запросов напишите на",
     pChildren3: "Не отправляйте пароли, коды входа и лишние конфиденциальные сведения.",
     sectionProviderPolicies: "Политики конфиденциальности и условия сервисов-провайдеров",
-    applePrivacy: "Конфиденциальность Apple ↗", googlePrivacy: "Конфиденциальность Google ↗",
+    applePrivacy: "Конфиденциальность Apple ↗", googlePrivacy: "Конфиденциальность Google ↗", formSubmitPrivacy: "Конфиденциальность FormSubmit ↗",
     githubPrivacy: "Конфиденциальность GitHub ↗", offTerms: "Условия Open Food Facts ↗"
   }
 };
@@ -116,24 +119,61 @@ if (menuButton && nav) {
 }
 
 const supportForm = document.querySelector('#support-form');
-const formError = document.querySelector('#form-error');
+const formMessage = document.querySelector('#form-message');
 
 if (supportForm) {
-  supportForm.addEventListener('submit', (event) => {
+  supportForm.addEventListener('submit', async (event) => {
     event.preventDefault();
     const values = new FormData(supportForm);
     const name = String(values.get('name') || '').trim();
+    const email = String(values.get('email') || '').trim();
     const selectedApp = String(values.get('app') || 'Fat Alien');
     const dictionary = translations[currentLanguage] || translations.en;
     const app = selectedApp === 'Another app' ? (dictionary.anotherApp || selectedApp) : selectedApp;
     const message = String(values.get('message') || '').trim();
-    if (!message) {
-      if (formError) formError.textContent = dictionary.pleaseDescribe || 'Please add a short description before opening your email app.';
-      return;
+    if (formMessage) {
+      formMessage.textContent = dictionary.formSending || 'Sending…';
+      formMessage.className = 'form-message';
     }
-    if (formError) formError.textContent = '';
-    const body = [(dictionary.appFieldName || 'App') + ': ' + app, name ? (dictionary.nameFieldName || 'Name') + ': ' + name : '', '', message].filter(Boolean).join('\n');
-    const subject = encodeURIComponent((dictionary.supportSubject || 'App support') + ' — ' + app);
-    window.location.href = 'mailto:kiorpavlo@gmail.com?subject=' + subject + '&body=' + encodeURIComponent(body);
+    const submitButton = supportForm.querySelector('button[type="submit"]');
+    if (submitButton) submitButton.disabled = true;
+    supportForm.setAttribute('aria-busy', 'true');
+    try {
+      const payload = Object.fromEntries(values.entries());
+      payload.email = email;
+      payload._replyto = email;
+      payload._subject = (dictionary.supportSubject || 'App support') + ' — ' + app;
+      payload._template = 'table';
+      const response = await fetch('https://formsubmit.co/ajax/kiorpavlo@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const result = await response.json();
+      const serviceMessage = String(result.message || '');
+      if (!response.ok || result.success === false || result.success === 'false') {
+        if (/confirm|activat/i.test(serviceMessage)) {
+          if (formMessage) formMessage.textContent = dictionary.formActivation || 'The form needs one-time activation. Please email kiorpavlo@gmail.com for now.';
+          return;
+        }
+        throw new Error(serviceMessage || 'Form submission failed');
+      }
+      if (/confirm|activat/i.test(serviceMessage)) {
+        if (formMessage) formMessage.textContent = dictionary.formActivation || 'The form needs one-time activation. Please email kiorpavlo@gmail.com for now.';
+      } else {
+        if (formMessage) formMessage.textContent = dictionary.formSent || 'Your message was sent.';
+        supportForm.querySelector('#name').value = '';
+        supportForm.querySelector('#email').value = '';
+        supportForm.querySelector('#message').value = '';
+      }
+    } catch (error) {
+      if (formMessage) {
+        formMessage.textContent = dictionary.formFailed || 'Your message could not be sent. Please try again or email kiorpavlo@gmail.com.';
+        formMessage.className = 'form-message is-error';
+      }
+    } finally {
+      if (submitButton) submitButton.disabled = false;
+      supportForm.removeAttribute('aria-busy');
+    }
   });
 }
