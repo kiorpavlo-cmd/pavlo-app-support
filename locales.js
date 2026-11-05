@@ -8,7 +8,7 @@ window.extraTranslations = {
     pleaseDescribe: "Please add a short description before sending.",
     formTitle: "SUPPORT REQUEST", nameLabel: "Your name", optional: "OPTIONAL", appLabel: "App", anotherApp: "Another app",
     messageLabel: "Message", messagePlaceholder: "Tell me what happened…",
-    navApps: "Applications", appsKicker: "APPLICATIONS", appsTitle: "Apps &amp;<br />projects<span class=\"period\">.</span>",
+    navApps: "Home", appsKicker: "APPLICATIONS", appsTitle: "Apps &amp;<br />projects<span class=\"period\">.</span>",
     appsIntro: "A selection of apps and projects created by Pavlo Kior.",
     fatAlienCategory: "NUTRITION & WELLNESS", fatAlienSummary: "A food and nutrition journal for tracking meals, personal goals and progress.",
     appsPrivacyLink: "Privacy details ↗", appsSupportLink: "Get support ↗",
@@ -37,7 +37,7 @@ window.extraTranslations = {
     menuOpen: "Открыть меню", menuClose: "Закрыть меню", languageLabel: "Язык",
     supportSubject: "Поддержка приложений", privacySubject: "Вопрос о конфиденциальности",
     appFieldName: "Приложение", nameFieldName: "Имя", pleaseDescribe: "Кратко опишите проблему.",
-    navApps: "Приложения", appsKicker: "ПРИЛОЖЕНИЯ", appsTitle: "Приложения<br />и проекты<span class=\"period\">.</span>",
+    navApps: "Главная", appsKicker: "ПРИЛОЖЕНИЯ", appsTitle: "Приложения<br />и проекты<span class=\"period\">.</span>",
     appsIntro: "Приложения и проекты Павла Киора.",
     fatAlienCategory: "ПИТАНИЕ И ЗДОРОВЬЕ", fatAlienSummary: "Дневник питания для отслеживания приёмов пищи, личных целей и прогресса.",
     appsPrivacyLink: "Подробнее о конфиденциальности ↗", appsSupportLink: "Поддержка ↗",
@@ -60,7 +60,7 @@ window.extraTranslations = {
     supportDocumentTitle: "Pavlo Kior · Поддержка приложений", privacyDocumentTitle: "Pavlo Kior · Конфиденциальность", appsDocumentTitle: "Pavlo Kior · Приложения"
   },
   uk: {
-    navSupport: "Підтримка", navPrivacy: "Конфіденційність", navContact: "Написати", navApps: "Застосунки",
+    navSupport: "Підтримка", navPrivacy: "Конфіденційність", navContact: "Написати", navApps: "Головна",
     appsKicker: "ЗАСТОСУНКИ", appsTitle: "Застосунки<br />й проєкти<span class=\"period\">.</span>",
     appsIntro: "Добірка застосунків і проєктів Павла Кіора.",
     fatAlienCategory: "ХАРЧУВАННЯ І ЗДОРОВ’Я", fatAlienSummary: "Щоденник харчування для запису страв, особистих цілей і прогресу.",
@@ -128,7 +128,7 @@ window.extraTranslations = {
     supportDocumentTitle: "Pavlo Kior · Підтримка застосунків", privacyDocumentTitle: "Pavlo Kior · Конфіденційність", appsDocumentTitle: "Pavlo Kior · Застосунки"
   },
   lt: {
-    navSupport: "Pagalba", navPrivacy: "Privatumas", navContact: "Susisiekti", navApps: "Programėlės",
+    navSupport: "Pagalba", navPrivacy: "Privatumas", navContact: "Susisiekti", navApps: "Pradžia",
     appsKicker: "PROGRAMĖLĖS", appsTitle: "Programėlės<br />ir projektai<span class=\"period\">.</span>",
     appsIntro: "Pavlo Kior sukurtų programėlių ir projektų rinkinys.",
     fatAlienCategory: "MITYBA IR SVEIKATA", fatAlienSummary: "Maisto dienoraštis, skirtas žymėti valgius, asmeninius tikslus ir pažangą.",
@@ -195,7 +195,7 @@ window.extraTranslations = {
     supportDocumentTitle: "Pavlo Kior · Programėlių pagalba", privacyDocumentTitle: "Pavlo Kior · Privatumas", appsDocumentTitle: "Pavlo Kior · Programėlės"
   },
   pl: {
-    navSupport: "Pomoc", navPrivacy: "Prywatność", navContact: "Kontakt", navApps: "Aplikacje",
+    navSupport: "Pomoc", navPrivacy: "Prywatność", navContact: "Kontakt", navApps: "Strona główna",
     appsKicker: "APLIKACJE", appsTitle: "Aplikacje<br />i projekty<span class=\"period\">.</span>",
     appsIntro: "Wybrane aplikacje i projekty Pavlo Kiora.",
     fatAlienCategory: "ODŻYWIANIE I ZDROWIE", fatAlienSummary: "Dziennik żywieniowy do zapisywania posiłków, celów i postępów.",
@@ -262,7 +262,7 @@ window.extraTranslations = {
     supportDocumentTitle: "Pavlo Kior · Pomoc dotycząca aplikacji", privacyDocumentTitle: "Pavlo Kior · Prywatność", appsDocumentTitle: "Pavlo Kior · Aplikacje"
   },
   de: {
-    navSupport: "Support", navPrivacy: "Datenschutz", navContact: "Kontakt", navApps: "Apps",
+    navSupport: "Support", navPrivacy: "Datenschutz", navContact: "Kontakt", navApps: "Startseite",
     appsKicker: "APPS", appsTitle: "Apps &amp;<br />Projekte<span class=\"period\">.</span>",
     appsIntro: "Eine Auswahl von Apps und Projekten von Pavlo Kior.",
     fatAlienCategory: "ERNÄHRUNG & GESUNDHEIT", fatAlienSummary: "Ein Ernährungstagebuch für Mahlzeiten, persönliche Ziele und Fortschritte.",
@@ -329,7 +329,7 @@ window.extraTranslations = {
     supportDocumentTitle: "Pavlo Kior · App-Support", privacyDocumentTitle: "Pavlo Kior · Datenschutz", appsDocumentTitle: "Pavlo Kior · Apps"
   },
   es: {
-    navSupport: "Soporte", navPrivacy: "Privacidad", navContact: "Contacto", navApps: "Apps",
+    navSupport: "Soporte", navPrivacy: "Privacidad", navContact: "Contacto", navApps: "Inicio",
     appsKicker: "APPS", appsTitle: "Apps y<br />proyectos<span class=\"period\">.</span>",
     appsIntro: "Una selección de apps y proyectos creados por Pavlo Kior.",
     fatAlienCategory: "NUTRICIÓN Y BIENESTAR", fatAlienSummary: "Un diario de alimentación para registrar comidas, objetivos personales y progreso.",

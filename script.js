@@ -7,7 +7,7 @@ let currentLanguage = 'en';
 const baseTranslations = {
   en: {},
   ru: {
-    navSupport: "Поддержка", navPrivacy: "Конфиденциальность", navContact: "Написать", navApps: "Приложения",
+    navSupport: "Поддержка", navPrivacy: "Конфиденциальность", navContact: "Написать", navApps: "Главная",
     overline: "ПОДДЕРЖКА ВСЕХ ПРИЛОЖЕНИЙ",
     title: "Чем я могу<br />помочь<span class=\"period\">?</span>",
     heroCopy: "Это страница поддержки приложений, созданных Павлом Киором. Напишите, каким приложением пользуетесь, и опишите проблему. Я постараюсь помочь.",
